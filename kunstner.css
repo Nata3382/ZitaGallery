@@ -156,8 +156,9 @@ table {
     color: #F6F0D2;
     line-height: 1.5;
     max-width: 260px;
-padding-bottom: 30px;
+padding-bottom: 40px;
 min-width: 400px;
+font-size: 1.1em;
   }
 
   /* HEADER */
@@ -187,7 +188,7 @@ min-width: 400px;
     font-weight: 400;
     text-decoration: none;
     color: #F6F0D2;
-    font-size: 160px; 
+    font-size: 11em; 
     margin-bottom: 30px;
   }
 
@@ -205,6 +206,13 @@ min-width: 400px;
 
 img {
   max-width: 450px;
+}
+
+.kontakt_button:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 5px;
+  cursor: pointer;
 }
 
   /* FOOTER */

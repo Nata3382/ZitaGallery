@@ -32,11 +32,31 @@
     <main>
   <section id="section1">
         <div id="product">
-          <!-- <img
-            class="productimage"
-            src="images/product2.jpg"
-            alt="product photo of t-shirt"
-          /> --> INDSAET GALLERI HER!!!!
+          <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="still_photos/dream_world.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="still_photos/golden_touch.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="still_photos/Industrial.png" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <div class="arrow_bjaelke">
+  <a class="prev" onclick="plusSlides(-1)">&#10229;</a>
+  <a class="next" onclick="plusSlides(1)">&#10230;</a>
+  </div>
+</div>
+
+<script src="gallery.js"></script>
+
         </div>
   
           <div id="product_info">
@@ -56,8 +76,8 @@
 <hr>
 <section id="section2">
   <h1>Kontakt</h1>
-<div>
-  <p>Jeg bruger kun kvalitetsmaterialer til udarbejdelse af alle værker, for at kunne garantere et sikkert køb. 
+<div id="kontakt_tekst">
+  <p class="tekst1">Jeg bruger kun kvalitetsmaterialer til udarbejdelse af alle værker, for at kunne garantere et sikkert køb. 
     Det skulle gerne være en livslang fornøjelse.</p> 
     
     <p>Send mig en besked, hvis du er interesseret i værket, så kan vi aftale nærmere angående levering. </p>
@@ -95,9 +115,6 @@
           >
           Send besked >
           </button>
-          <h3 class="" id="ty-message">
-            Tak for din besked, du hører tilbage fra mig snart!
-          </h3>
         </div>
     </form>
   </section>

@@ -196,6 +196,11 @@ table {
     font-size: 38px;
   }
 
+  .img_wrapper a img:hover{
+    transform: scale(1.04);
+    transition: transform 300ms ease-in-out;
+  }
+
 
   /* FOOTER */
 
