@@ -141,7 +141,7 @@ table {
   section {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    gap: 80px;
+    gap: 100px;
      margin-left: 150px;
      margin-right: 150px;
      margin-bottom: 200px;

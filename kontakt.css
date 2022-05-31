@@ -139,12 +139,13 @@ table {
   }
 
   main {
-      display: flex;
-      flex-direction: row;
-      padding: 100px;
-      padding-top: 50px;
-      justify-content: space-between;
-     
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 15px;
+     margin-left: 200px;
+     margin-right: 200px;
+     margin-bottom: 150px;
+     margin-top: 150px;
   }
 
 
@@ -153,8 +154,8 @@ table {
     font-weight: regular;
     text-decoration: none;
     color: #F6F0D2;
-    line-height: 1.2;
-    max-width: 260px;
+    line-height: 1.5;
+    max-width: 360px;
 
   }
 
@@ -199,6 +200,7 @@ table {
     display: flex;
     flex-direction: column;
     justify-content: right;
+    max-width: 400px;
 }
 
 input {
@@ -207,8 +209,9 @@ input {
     border-radius: 20px;
     margin-bottom: 8px;
     min-width: 200px;
-    padding-top: 5px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    margin-bottom: 18px;
 
 }
 
@@ -219,6 +222,7 @@ textarea {
     min-width: 200px;
     min-height: 100px;
     margin-bottom: 25px;
+    padding-top: 10px;
 }
 
 ::placeholder {
@@ -228,7 +232,8 @@ textarea {
     color: #F6F0D2;
     font-size: 12px;
     text-align: center;
-    padding-top: 5px;
+    padding-top: 10px;
+    margin-top: 20px;
   }
   
   #ty-message {
