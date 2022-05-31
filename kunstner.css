@@ -139,12 +139,13 @@ table {
   }
 
   section {
-      display: flex;
-      flex-direction: row;
-      padding: 100px;
-      padding-top: 50px;
-      justify-content: space-between;
-     
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 80px;
+     margin-left: 150px;
+     margin-right: 150px;
+     margin-bottom: 200px;
+     margin-top: 150px;
   }
 
 
@@ -153,9 +154,10 @@ table {
     font-weight: regular;
     text-decoration: none;
     color: #F6F0D2;
-    line-height: 1.2;
+    line-height: 1.5;
     max-width: 260px;
 padding-bottom: 30px;
+min-width: 400px;
   }
 
   /* HEADER */
@@ -199,6 +201,10 @@ padding-bottom: 30px;
     background-color: transparent;
     border: none; 
 
+}
+
+img {
+  max-width: 450px;
 }
 
   /* FOOTER */

@@ -289,12 +289,39 @@ h1 {
 #nyhedsbrev {
   text-align: center;
   align-self: center;
+  font-size: 1.4em;
+  min-width: 50vw;
+  margin-bottom: 70px;
+  margin-top: 40px;
 }
 
 .nyhed_container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+#mce-EMAIL {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #F6F0D2;
+  width: 35vw;
+  height: 20px;
+}
+
+
+
+.subscribe {
+  display: inline;
+  background-color: transparent;
+  border: 2px solid #F6F0D2;
+  box-shadow: none;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  font-family: playfair display;
+  font-size: 50px;
+  color: #F6F0D2;
 }
 
 footer {
