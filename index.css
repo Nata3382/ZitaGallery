@@ -260,6 +260,30 @@ h1 {
   z-index: -1;
 }
 
+#gallery_images{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 80px;
+}
+
+#alle_vaerker{
+  text-align: center;
+}
+
+.image_container{
+  width: 300px;
+  height: 300px;
+  border: 1px solid #84846E;
+  border-radius: 50%;
+}
+
+.image_container img{
+ width: 300px;
+}
+
 #section_2 {
     margin-top: 100px;
     margin-bottom: 100px;
