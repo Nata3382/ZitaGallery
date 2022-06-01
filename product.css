@@ -284,16 +284,18 @@ h1 {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 120%;
+  top: 91%;
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: #19291a;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  background-color: #f6f0d2;
+  opacity: 0.5;
 }
 
 /* Position the "next button" to the right */
@@ -306,6 +308,8 @@ h1 {
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
+  color: #f6f0d2;
+  opacity: 1;
 }
 
 .slideshow-container {
@@ -316,11 +320,6 @@ h1 {
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
-}
-
-.arrow_bjaelke {
-  background-color: #19291a;
-  height: 60px;
 }
 
 @keyframes fade {
