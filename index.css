@@ -1,4 +1,3 @@
-
 /* CSS RESET */
 html,
 body,
@@ -133,121 +132,134 @@ table {
 @import url("https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 /* general style */
-  
-  body {
-    background-color: #19291A;
 
-  }
+body {
+  background-color: #19291a;
+}
 
+p {
+  font-family: "tinos";
+  font-weight: 300;
+  text-decoration: none;
+  color: #f6f0d2;
+  line-height: 1.5;
+  max-width: 28vw;
+  padding-bottom: 40px;
+  font-size: 1.1em;
+}
 
-  p {
-    font-family: "tinos";
-    font-weight: 300;
-    text-decoration: none;
-    color: #F6F0D2;
-    line-height: 1.5;
-    max-width: 28vw;
-    padding-bottom: 40px;
-    font-size: 1.1em;
-  }
+/* HEADER */
 
-  /* HEADER */
+header a {
+  font-family: "playfair";
+  font-weight: 400;
+  text-decoration: none;
+  color: #f6f0d2;
+  font-size: 25px;
+}
+header a:hover {
+  font-style: italic;
+}
 
-  header a {
-    font-family: "playfair";
-    font-weight: 400;
-    text-decoration: none;
-    color: #F6F0D2;
-    font-size: 30px;
-  }
-  header a:hover {
-    font-style: italic;
-  }
-
-  nav {
-      margin: 50px;
-    margin-top: 50px;
-    margin-bottom: 100px;
-    text-align: center;
-    display: flex;
+nav {
+  margin: 50px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  text-align: center;
+  display: flex;
   justify-content: space-around;
-  }
+}
 
-  h1 {
-    font-family: "playfair";
-    font-weight: 400;
-    text-decoration: none;
-    color: #F6F0D2;
-    font-size: 17.5vw; 
-    text-align: center;
-  }
+h1 {
+  font-family: "playfair";
+  font-weight: 400;
+  text-decoration: none;
+  color: #f6f0d2;
+  font-size: 17.5vw;
+  text-align: center;
+}
 
-  h1 span {
-      padding-left: 10px;
-    color: #84846E; 
-    font-style: italic;
-  }
+h1 span {
+  padding-left: 10px;
+  color: #84846e;
+  font-style: italic;
+}
 
- #top_front {
+#top_front {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 30px;
   margin-left: 10vw;
   margin-right: 10vw;
- }
+}
 
 .home_buttons {
-    font-family: "playfair";
-    font-weight: 400;
-    text-decoration: none;
-    color: #F6F0D2;
-    font-size: 50px; 
-    font-style: italic;
-    background-color: transparent;
-    border: none; 
+  font-family: "playfair";
+  font-weight: 400;
+  text-decoration: none;
+  color: #f6f0d2;
+  font-size: 50px;
+  font-style: italic;
+  background-color: transparent;
+  border: none;
 }
 
 .home_buttons:hover {
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 5px;
-    cursor: pointer;
-  }
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 5px;
+  cursor: pointer;
+}
 
 h1 {
   margin-bottom: 100px;
 }
 
-  #front_circle {
-    border: 1px solid #84846E;
-    border-radius: 50%;
-    height: 400px;
-    width: 400px;
-    position: relative;
-    z-index: -1;
-  }
+.imgcontainer {
+  position: relative;
+}
 
-  #front_img {
-    max-width: 600px;
-    max-height: 600px;
-    position: relative;
-    z-index: 2;
-    margin-top: 0;
-    padding-top: 0;
-  }
+#section_1 {
+  margin-bottom: 220px;
+}
+
+#front_circle {
+  border: 1px solid #84846e;
+  border-radius: 50%;
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 40px;
+}
+
+#section_1 p {
+  padding-top: 80px;
+}
+
+#front_img {
+  max-width: 650px;
+  max-height: 650px;
+  position: absolute;
+  z-index: 2;
+  margin-top: 0;
+  padding-top: 0;
+  top: -30px;
+  left: -150px;
+}
 
 #kunstner_section {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-  gap: 30px;
-  margin-left: 10vw;
-      margin-right: 10vw;
-      margin-bottom: 120px;
-
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 60px;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  margin-bottom: 150px;
 }
 
-#kunst_info{
-  padding-top: 30px;
+#kunst_info {
+  padding-top: 80px;
 }
 
 #portraet {
@@ -258,15 +270,17 @@ h1 {
 }
 
 #artist_circle {
-  border: 1px solid #84846E;
+  border: 1px solid #84846e;
   border-radius: 50%;
   height: 400px;
   width: 400px;
-  position: relative;
+  position: absolute;
   z-index: -1;
+  top: 20px;
+  left: 30px;
 }
 
-#gallery_images{
+#gallery_images {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 30px;
@@ -275,53 +289,56 @@ h1 {
   margin-left: 5vw;
 }
 
-
-.image_container{
+.image_container {
   width: 300px;
   height: 300px;
-  border: 1px solid #84846E;
+  border: 1px solid #84846e;
   border-radius: 50%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
-.image_container img{
-  width: 300px;
+.image_container img {
+  width: 420px;
 }
 
-#alle_vaerker{
+.image_container a img:hover {
+  transform: scale(1.04);
+  transition: transform 300ms ease-in-out;
+}
+
+#alle_vaerker {
   display: flex;
   justify-content: center;
 }
 
-#alle_vaerker a{
-align-self: center;
-text-align: center;
-align-items: center;
-align-content: center;
-margin-bottom: 150px;
+#alle_vaerker a {
+  align-self: center;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 180px;
 }
-
 
 #section_2 {
-    margin-top: 100px;
-    padding-left: 100px;
-      padding-right: 100px;
-      margin-bottom: 80px;
-      align-items: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-bottom: 80px;
+  align-items: center;
 }
 
-
-
 #section_4 {
-    background-color: #432216;
-    padding-top: 50px;
-    padding-bottom: 100px;
-    padding-left: 100px;
-      padding-right: 100px;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-
+  margin-top: 100px;
+  background-color: #432216;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 #nyhedsbrev {
@@ -329,13 +346,11 @@ margin-bottom: 150px;
   align-self: center;
   font-size: 1.4em;
   min-width: 50vw;
-  margin-bottom: 90px;
+  margin-bottom: 70px;
   margin-top: 40px;
 }
 
-
-
-#mc_embed_signup_scroll{
+#mc_embed_signup_scroll {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -344,57 +359,65 @@ margin-bottom: 150px;
 #mce-EMAIL {
   background-color: transparent;
   border: none;
-  border-bottom: 1.5px solid #F6F0D2;
+  border-bottom: 1.5px solid #f6f0d2;
   width: 45vw;
   height: 20px;
-  padding-top: 50px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "tinos";
+  font-weight: regular;
+  text-decoration: none;
+  color: #f6f0d2;
+  font-size: 1.1em;
 }
 
-
+input[type="email"]:focus {
+  border: none;
+}
 
 .subscribe {
   display: inline;
   background-color: transparent;
-  border: 1.5px solid #F6F0D2;
+  border: 1.5px solid #f6f0d2;
   box-shadow: none;
   width: 70px;
   height: 70px;
   border-radius: 50%;
   font-family: playfair display;
   font-size: 50px;
-  color: #F6F0D2;
-margin-left: -70px;
-margin-top: -120px;
+  color: #f6f0d2;
+  margin-left: -70px;
+  margin-top: -120px;
 }
 
-
-
 footer {
-    padding-top: 80px;
-    padding-bottom: 50px;
-    padding-left: 100px;
-      padding-right: 100px;
-      border-top: 1px solid #84846E;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+  border-top: 1px solid #84846e;
 }
 
 #footer_div {
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  justify-content: space-around;
 }
 
 #footer_div a {
-    font-family: "tinos";
-    font-weight: regular;
-    text-decoration: none;
-    color: #F6F0D2;
-    font-size: 20px;
-    padding-bottom: 30px;
+  font-family: "tinos";
+  font-weight: regular;
+  text-decoration: none;
+  color: #f6f0d2;
+  font-size: 20px;
+  padding-bottom: 30px;
 }
 
 #footer_div a:hover {
-    text-decoration: underline;
-    text-decoration-thickness: 1.5px;
-    text-underline-offset: 2px;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 2px;
 }

@@ -132,76 +132,73 @@ table {
 @import url("https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 /* general style */
-  
-  body {
-    background-color: #432216;
 
-  }
+body {
+  background-color: #432216;
+}
 
-  section {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    gap: 100px;
-     margin-left: 150px;
-     margin-right: 150px;
-     margin-bottom: 200px;
-     margin-top: 150px;
-  }
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 100px;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 200px;
+  margin-top: 150px;
+}
 
+p {
+  font-family: "tinos";
+  font-weight: regular;
+  text-decoration: none;
+  color: #f6f0d2;
+  line-height: 1.5;
+  max-width: 260px;
+  padding-bottom: 40px;
+  min-width: 400px;
+  font-size: 1.1em;
+}
 
-  p {
-    font-family: "tinos";
-    font-weight: regular;
-    text-decoration: none;
-    color: #F6F0D2;
-    line-height: 1.5;
-    max-width: 260px;
-padding-bottom: 40px;
-min-width: 400px;
-font-size: 1.1em;
-  }
+/* HEADER */
 
-  /* HEADER */
+header a {
+  font-family: "playfair";
+  font-weight: 400;
+  text-decoration: none;
+  color: #f6f0d2;
+  font-size: 25px;
+}
+header a:hover {
+  font-style: italic;
+}
 
-  header a {
-    font-family: "playfair";
-    font-weight: 400;
-    text-decoration: none;
-    color: #F6F0D2;
-    font-size: 30px;
-  }
-  header a:hover {
-    font-style: italic;
-  }
-
-  nav {
-      margin: 50px;
-    margin-top: 50px;
-    margin-bottom: 100px;
-    text-align: center;
-    display: flex;
+nav {
+  margin: 50px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  text-align: center;
+  display: flex;
   justify-content: space-around;
-  }
+}
 
-  h1 {
-    font-family: "playfair";
-    font-weight: 400;
-    text-decoration: none;
-    color: #F6F0D2;
-    font-size: 11em; 
-    margin-bottom: 30px;
-  }
+h1 {
+  font-family: "playfair";
+  font-weight: 400;
+  text-decoration: none;
+  color: #f6f0d2;
+  font-size: 11em;
+  margin-bottom: 30px;
+}
 
-  button {
-    font-family: "playfair";
-    font-weight: 400;
-    text-decoration: none;
-    color: #F6F0D2;
-    font-size: 45px; 
-    font-style: italic;
-    background-color: transparent;
-    border: none; 
-
+button {
+  font-family: "playfair";
+  font-weight: 400;
+  text-decoration: none;
+  color: #f6f0d2;
+  font-size: 45px;
+  font-style: italic;
+  background-color: transparent;
+  border: none;
 }
 
 img {
@@ -215,35 +212,50 @@ img {
   cursor: pointer;
 }
 
-  /* FOOTER */
+.imgcontainer {
+  position: relative;
+}
+
+#circle_kunstner {
+  border: 1px solid #f6f0d2;
+  border-radius: 50%;
+  height: 450px;
+  width: 450px;
+  position: absolute;
+  z-index: -1;
+  top: 25px;
+  left: 40px;
+}
+
+/* FOOTER */
 
 footer {
-    padding-top: 80px;
-    padding-bottom: 50px;
-    padding-left: 100px;
-      padding-right: 100px;
-      border-top: 1px solid #84846E;
-      background-color: #19291A;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+  border-top: 1px solid #84846e;
+  background-color: #19291a;
 }
 
 #footer_div {
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  justify-content: space-around;
 }
 
 #footer_div a {
-    font-family: "tinos";
-    font-weight: regular;
-    text-decoration: none;
-    color: #F6F0D2;
-    font-size: 20px;
-    padding-bottom: 30px;
+  font-family: "tinos";
+  font-weight: regular;
+  text-decoration: none;
+  color: #f6f0d2;
+  font-size: 20px;
+  padding-bottom: 30px;
 }
 
 #footer_div a:hover {
-    text-decoration: underline;
-    text-decoration-thickness: 1.5px;
-    text-underline-offset: 2px;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 2px;
 }
