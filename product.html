@@ -1,129 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-  <link rel="stylesheet" href="product.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Produktside for unika abstrakt kunstværk fra kunstner Zita Clausen af kunstgalleri Zita Gallery."
+    />
+    <meta
+      name="keywords"
+      content="Unika, kunstværker, træmalerier, kunst, galleri, abstrakt, kunstmalerier, kunstner, kunstgalleri"
+    />
+    <link rel="stylesheet" href="product.css" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display&display=swap" rel="stylesheet"> 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
 
-
-  <title>Zita Gallery - Produktside</title>
-</head>
-<body>
+    <title>Zita Gallery - Produktside</title>
+  </head>
+  <body>
     <header>
-        <nav>
-            <a href="index.html">Forside</a>
-            <a href="galleri.html">Galleri</a>
-            <a href="kunstner.html">Kunstner</a>
-            <a href="kontakt.html">Kontakt</a>
-          </nav>
+      <nav>
+        <a href="index.html">Forside</a>
+        <a href="galleri.html">Galleri</a>
+        <a href="kunstner.html">Kunstner</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
     </header>
     <main>
-  <section id="section1">
+      <section id="section1">
         <div id="product">
           <!-- Slideshow container -->
-<div class="slideshow-container">
-
-  <div class="mySlides fade">
-    <img src="still_photos/dream_world.png" style="width:100%">
-  </div>
-
-  <template>
-  <div class="mySlides fade">
-    <img src="still_photos/dream_world.png" style="width:100%">
-  </div>
-</template>
-
-  <!-- Next and previous buttons -->
-  <div class="arrow_bjaelke">
-  <a class="prev" onclick="plusSlides(-1)">&#10229;</a>
-  <a class="next" onclick="plusSlides(1)">&#10230;</a>
-  </div>
-</div>
-
-<script src="gallery.js"></script>
-
-        </div>
-  
-          <div id="product_info">
-            <div class="info">
-                <p class="title">Title</p>
-                <p class="size">Size</p>
-                <p class="materials">Materials</p>
-                <p class="info">Info</p>
-                <p class="price">Price</p>
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="still_photos/dream_world.png" style="width: 100%" />
             </div>
-  
-          
-          
-</div>
-</section>
 
-<hr>
-<section id="section2">
-  <h1>Kontakt</h1>
-<div id="kontakt_tekst">
-  <p class="tekst1">Jeg bruger kun kvalitetsmaterialer til udarbejdelse af alle værker, for at kunne garantere et sikkert køb. 
-    Det skulle gerne være en livslang fornøjelse.</p> 
-    
-    <p>Send mig en besked, hvis du er interesseret i værket, så kan vi aftale nærmere angående levering. </p>
-  </div>
-    <form data-netlify="true" method="get" id="custom_form">
-      <div id="form-wrapper">
-          <input
-            placeholder="Fulde Navn"
-            type="text"
-            id="fnavn"
-            name="fnavn"
-            required
-          />
-          <input
-            placeholder="E-mail adresse"
-            type="email"
-            id="email_felt"
-            name="email_felt"
-            required
-          />
-          <textarea
-            placeholder="Besked"
-            id="message"
-            name="message"
-            required
-          ></textarea>
+            <template>
+              <div class="mySlides fade">
+                <img src="still_photos/dream_world.png" style="width: 100%" />
+              </div>
+            </template>
+
+            <!-- Next and previous buttons -->
+            <div class="arrow_bjaelke">
+              <a class="prev" onclick="plusSlides(-1)">&#10229;</a>
+              <a class="next" onclick="plusSlides(1)">&#10230;</a>
+            </div>
+          </div>
+
+          <script src="gallery.js"></script>
         </div>
-       
-        <div id="btn-msg">
-          <button
-            type="submit"
-            form="custom_form"
-            value="Submit"
-            class="enquire"
-          >
-          Send besked >
-          </button>
+
+        <div id="product_info">
+          <div class="info">
+            <p class="title">Title</p>
+            <p class="size">Size</p>
+            <p class="materials">Materials</p>
+            <p class="info">Info</p>
+            <p class="price">Price</p>
+          </div>
         </div>
-    </form>
-  </section>
-    
+      </section>
+
+      <hr />
+      <section id="section2">
+        <h1>Kontakt</h1>
+        <div id="kontakt_tekst">
+          <p class="tekst1">
+            Jeg bruger kun kvalitetsmaterialer til udarbejdelse af alle værker,
+            for at kunne garantere et sikkert køb. Det skulle gerne være en
+            livslang fornøjelse.
+          </p>
+
+          <p>
+            Send mig en besked, hvis du er interesseret i værket, så kan vi
+            aftale nærmere angående levering.
+          </p>
+        </div>
+        <form data-netlify="true" method="get" id="custom_form">
+          <div id="form-wrapper">
+            <input
+              placeholder="Fulde Navn"
+              type="text"
+              id="fnavn"
+              name="fnavn"
+              required
+            />
+            <input
+              placeholder="E-mail adresse"
+              type="email"
+              id="email_felt"
+              name="email_felt"
+              required
+            />
+            <textarea
+              placeholder="Besked"
+              id="message"
+              name="message"
+              required
+            ></textarea>
+          </div>
+
+          <div id="btn-msg">
+            <button
+              type="submit"
+              form="custom_form"
+              value="Submit"
+              class="enquire"
+            >
+              Send besked >
+            </button>
+          </div>
+        </form>
+      </section>
     </main>
     <footer>
-        <div id="footer_div">
-            <a href="kontakt.html">Kontakt</a>
-            <a href="kunstner.html">Kunstner</a>
-            <a href="#">Nyhedsbrev</a>
-          </div> 
+      <div id="footer_div">
+        <a href="kontakt.html">Kontakt</a>
+        <a href="kunstner.html">Kunstner</a>
+        <a href="#">Nyhedsbrev</a>
+      </div>
     </footer>
     <script src="product.js"></script>
-</body>
+  </body>
 </html>

@@ -15,7 +15,6 @@ fetch("https://kea21-ed2b.restdb.io/rest/paintings", {
     console.error(err);
   });
 
-
 // fetch(url)
 //   .then(function (res) {
 //     return res.json();
@@ -29,18 +28,17 @@ function handleProductList(data) {
 }
 
 function showProduct(product) {
-    const template = document.querySelector("#smallProductTemplate").content;
-    const copy = template.cloneNode(true);
-    copy.querySelector("a").href = `product.html?id=${product._id}`;
-    copy.querySelector(
-        "img.productimage"
-      ).src = product.photo;
-      copy.querySelector("img.productimage").alt = product.productdisplayname;
+  const template = document.querySelector("#smallProductTemplate").content;
+  const copy = template.cloneNode(true);
+  copy.querySelector("a").href = `product.html?id=${product._id}`;
+  copy.querySelector("img.productimage").src = product.photo;
+  copy.querySelector("img.productimage").alt = product.productdisplayname;
 
-    copy.querySelector("p.size").textContent = product.size;
-    copy.querySelector("h1").textContent = product.title;
-  
-    
-    const parent = document.querySelector("section");
-    parent.appendChild(copy);
-  }
+  copy.querySelector("p.size").textContent = product.size;
+  copy.querySelector("h1").textContent = product.title;
+  copy.querySelector("img").alt = product.title;
+  // ^^^Tilføjet alt til alle galleribilleder fra databasen
+
+  const parent = document.querySelector("section");
+  parent.appendChild(copy);
+}

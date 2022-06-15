@@ -25,6 +25,9 @@ function showProduct(product) {
 
   document.querySelector(".mySlides img").src = product.photo;
 
+  document.querySelector("img").alt = product.title;
+  // ^^^Tilføjet alt til alle galleribilleder fra databasen
+
   product.images.forEach(showImage);
 
   function showImage(image) {
